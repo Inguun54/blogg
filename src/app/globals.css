@@ -1,42 +1,228 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+*{
+ padding: 0px;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.page-container {
+  max-width: 80vw;
+  margin: 0 ;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+ 
+.page-title {
+  grid-column: 1 / -1;
+  color: #000302;
+}
+ 
+.loading {
+  grid-column: 1 / -1;
+  text-align: center;
+  font-size: 24px;
+  color: #555;
+}
+ 
+.article-card {
+  border: 1px solid #d9dddc;
+  border-radius: 20px;
+  padding: 16px;
 }
 
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
+.article-title {
+  font-size: 24px;
+  margin: 0 0 10px;
+}
+ 
+.article-description {
+  font-size: 18px;
+  color: gray;
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.article-image {
+  max-width:600px;
+  border-radius: 10px;
+  height: 350px;
 }
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+.user-profile {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+ 
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.user-name {
+  color: grey;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
+.user-date {
+  color: grey;
+}
+ 
+.page-last-comment-at, 
+.page-comments-count, 
+.page-positive-reactions-count, 
+.page-public-reactions-count {
+  grid-column: 1 / -1; 
+  margin: 55px;
+}
+
+.page-last-comment-at {
+  color: gray;
+  margin: 20px;
+}
+
+.article-image:hover {
+  cursor: pointer;
+}
+
+.page-cover_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 800px; 
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 12px;
+}
+
+.input{
+width: 600px;
+height: 26px;
+margin-left: auto;
+margin-right: auto;
+border-radius: 4px;
+}
+
+.page-Home {
+  font-size: 25px;
+}
+
+.page-Home:hover{
+cursor: pointer;
+}
+
+.page-description {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+  padding: 8px;
+  font-size: 20px;
+  width: 800px;
+  border: 0 2px solid;
+  border-radius: 12px;
+  background: #8fd9fb;
+  color: #191919;
+}
+
+.page-title {
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Arial, sans-serif;
+  padding-top: 50px;
+  font-size: 25px;
+  padding-bottom: 40px;
+  width: 900px;
+
+}
+
+.page-tags{
+  max-width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+  color: #0076b7;
+   margin-top: 20px;
+  font-size: 20px;
+  margin-bottom: 20px;
+  background: #d9dddc;
+  border-radius: 4px;
+  
+}
+
+
+.container2{
+  margin-top: 20px;
+  border: #C8BAD4 2px solid;
+  padding: 2px;
+  background: #C8BAD4;
+  width: 600px;
+  display: flex;
+  gap: 20px;
+  width: auto;
+  max-width: fit-content;
+  margin-left: 610px;
+  border-radius: 5px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+.user-tags {
+  color: #0076b7;
+  background-color: #ececec;
+  width: 200px;
+  border-radius: 3px;
+}
+
+.user-tags:hover{
+  cursor: pointer;
+}
+
+
+.page-comments_count,
+.page-public_reactions_count,
+.page-last_comment_at,
+.page-positive_reactions_count{
+  max-width: fit-content;
+  text-align: center;
+  font-size: 22px;
+}
+
+.Samthing {
+  border: #0076b7 solid 3px;
+  width: 500px;
+  height: 300px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 20px;
+}
+
+.page-parent{
+  width: 100px;
+  padding: 9px;
+  padding-left: 18px;
+  background-color: #555;
+  color: #d9dddc;
+  border-radius: 4px;
+}
+
+.page-parent:hover{
+  cursor: pointer;
+}
+
+.prev-button{
+  width: 100px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.next-button{
+  text-align: center;
+  font-size: 12px;
+  width: 100px;
+}
+
+.page-Drake{
+  width: 100px;
+  padding: 9px;
+  padding-left: 18px;
+  background-color: #555;
+  color: #d9dddc;
+  border-radius: 4px;
 }
